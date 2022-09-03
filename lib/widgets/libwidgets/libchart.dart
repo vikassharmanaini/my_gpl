@@ -44,7 +44,11 @@ class LibperChart extends StatelessWidget {
           padding: const EdgeInsets.all(4.0),
           child: Column(
             children: <Widget>[
-              Text("My Score = $Avrage"),
+              Text(
+                "Average : $Avrage",
+                textAlign: TextAlign.left,
+                style: TextStyle(fontWeight: FontWeight.w600,),
+              ),
               Expanded(
                 child: charts.BarChart(
                   daynumber,

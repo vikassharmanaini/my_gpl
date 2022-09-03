@@ -51,11 +51,10 @@ class _LibraryState extends State<Library> {
         ),
         bottomNavigationBar: ConvexAppBar(
           backgroundColor: Colors.black,
-          
+
           items: [
             TabItem(icon: Icons.dashboard_customize_outlined, title: 'Home'),
-            TabItem(
-                icon: Icons.collections_bookmark_outlined, title: 'Collection'),
+            TabItem(icon: Icons.collections_bookmark_outlined, title: 'Books'),
             TabItem(icon: Icons.add, title: 'Add'),
             TabItem(icon: Icons.bookmark_outline_rounded, title: 'Marks'),
           ],
