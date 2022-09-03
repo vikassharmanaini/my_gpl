@@ -28,14 +28,14 @@ class _LoginState extends State<Login> {
                 clipper: wavecliper(),
                 child: Container(
                   color: Colors.black,
-                  height: 100,
+                  height: 200,
                 ),
               ),
             ),
             Container(
-              margin: EdgeInsets.all(40),
+              margin: EdgeInsets.all(10),
               child: const Text(
-                "Welcome",
+                "Welcome Back",
                 style: TextStyle(
                   color: Colors.black,
                   fontWeight: FontWeight.bold,
@@ -91,7 +91,9 @@ class _LoginState extends State<Login> {
                     elevation: 15.0,
                     tooltip: "Log in",
                     child: Icon(Icons.login_rounded, semanticLabel: "Log in"),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushNamed(context, MyRouts.College);
+                    },
                   ),
                 ),
               ],
