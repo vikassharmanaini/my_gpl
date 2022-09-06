@@ -17,7 +17,10 @@ class _AddBookState extends State<AddBook> {
   @override
   Widget build(BuildContext context) {
     return Column(
-      children: [LibTitle(title: Title)],
+      children: [
+        LibTitle(title: Title),
+        
+      ],
     );
   }
 }

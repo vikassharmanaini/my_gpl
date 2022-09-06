@@ -35,10 +35,12 @@ class AppDrawer extends StatelessWidget {
                 style: TextStyle(fontWeight: FontWeight.bold),
               ),
               accountEmail: Text(UserData().getenroll()),
-              currentAccountPicture: const CircleAvatar(
-                backgroundImage: NetworkImage(
-                    "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"),
-              ),
+
+              currentAccountPicture: CircleAvatar(),
+              // currentAccountPicture: const CircleAvatar(
+              //   backgroundImage: NetworkImage(
+              //       "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"),
+              // ),
             ),
           ),
           ListTile(
